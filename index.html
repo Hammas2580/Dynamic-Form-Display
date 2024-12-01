@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Form Data Dynamically with JavaScript</title>
+    <!-- ===== bootstarp cdn link => -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- ===== Script link => ===== -->
+    <link rel="stylesheet" href="./app.js" />
+    <!-- ===== style sheet ===== -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="input_heading">
+      <h3>"Display Form Data Dynamically with JavaScript"</h3>
+    </div>
+    <form
+      onsubmit="formSubmit(event, 'name' , 'last_name' , 'email' , 'pasword' , 'Conform_password' , 'number' , 'age' , 'address' , 'city' )"
+    >
+      <div class="input_container">
+        <div class="input_name">
+          <h5>Enter Your First Name</h5>
+          <input
+            class="input_form"
+            type="text"
+            placeholder="Enter Your First Name"
+            id="name"
+          />
+          <p id="error_name"></p>
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Second Name</h5>
+          <input
+            class="input_form"
+            type="text"
+            placeholder="Enter Your Second Name"
+            id="last_name"
+          />
+          <p id="error_lastName"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Email</h5>
+          <input
+            class="input_form"
+            type="email"
+            placeholder="Enter Your Email"
+            id="email"
+          />
+          <p id="eroor_email"></p>
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Password</h5>
+          <input
+            class="input_form"
+            type="Password"
+            placeholder="Enter Your Password"
+            id="pasword"
+          />
+          <p id="validition_password"></p>
+          <p id="password_error"></p>
+          <p id="eroor_password"></p>
+
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Confrom Password</h5>
+          <input
+            class="input_form"
+            type="password"
+            placeholder="Enter Your Password"
+            id="Conform_password"
+          />
+          <p id="eroor_conpassword"></p>
+          <p id="password_error"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your  Date</h5>
+          <input
+            class="input_form"
+            type="date"
+            name="city"
+            placeholder="Enter your Date"
+            id="date"
+          />
+          <p id="eroor_date"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Time</h5>
+          <input
+            class="input_form"
+            type="time"
+            name="city"
+            placeholder="Enter your Time"
+            id="time"
+          />
+          <p id="eroor_time"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Phone Number</h5>
+          <input
+            class="input_form"
+            type="Number"
+            placeholder="Enter Your Number"
+            id="number"
+          />
+          <p id="eroor_number"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Age</h5>
+          <input
+            class="input_form"
+            type="text"
+            placeholder="Enter Your Age"
+            id="age"
+          />
+          <p id="eroor_age"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your Address</h5>
+          <input
+            class="input_form"
+            type="text"
+            name="address"
+            placeholder="Enter your address"
+            id="address"
+          />
+          <p id="eroor_address"></p>
+
+        </div>
+        <div class="input_name">
+          <h5>Enter Your City</h5>
+          <input
+            class="input_form"
+            type="text"
+            name="city"
+            placeholder="Enter your City"
+            id="city"
+          />
+          <p id="eroor_city"></p>
+
+        </div>
+        <br />
+        <div class="submit_form">
+          <input
+            class="input_form"
+            type="submit"
+            value="Register Now"
+            class="btn btn-primary"
+          />
+        </div>
+      </div>
+    </form>
+
+    <div class="form_display_container">
+      <div class="display_innerdiv">
+        <div class="display_input">
+          <h5>Your Name</h5>
+          <p id="display_name"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Second Name</h5>
+          <p id="display_lastName"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Email</h5>
+          <p id="display_email"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Password</h5>
+          <p id="display_password"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Conform Password</h5>
+          <p id="display_confrompassword"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Time</h5>
+          <p id="display_time"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Date</h5>
+          <p id="display_date"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Number</h5>
+          <p id="display_number"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Age</h5>
+          <p id="display_age"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your Address</h5>
+          <p id="display_address"></p>
+        </div>
+        <div class="display_input">
+          <h5>Your City</h5>
+          <p id="display_city"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

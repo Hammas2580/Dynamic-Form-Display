@@ -1,0 +1,99 @@
+/* Body Background */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: Arial, sans-serif;
+}
+
+/* Input Heading */
+.input_heading h3 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Input Container */
+.input_container {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input_form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.input_form:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Error Messages */
+p[id^="error"],
+p[id^="eroor"] {
+    color: #dc3545;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Display Section */
+.form_display_container {
+    width: 50%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.display_input h5 {
+    color: #343a40;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.display_input p {
+    color: #495057;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .input_container,
+    .form_display_container {
+        width: 90%;
+    }
+}
